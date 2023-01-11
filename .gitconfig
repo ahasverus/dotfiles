@@ -1,0 +1,10 @@
+[user]
+	name  = Nicolas Casajus
+	email = nicolas.casajus@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[branch]
+	autosetuprebase = always
+	autosetupmerge  = always
