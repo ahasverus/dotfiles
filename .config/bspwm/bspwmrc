@@ -9,6 +9,7 @@ xsetroot -cursor_name left_ptr
 feh --bg-scale $HOME/.config/wallpapers/nord-ghibli.png
 
 source $HOME/.config/polybar/launch.sh
+pulseaudio --start
 
 
 ## Workspaces & monitors ----
