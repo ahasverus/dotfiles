@@ -40,6 +40,12 @@ xinput set-prop 11 331 50
 xinput set-prop 11 313 1
 xinput set-prop 11 334 1
 
+# disable wlan
+rfkill block wifi &
+
+# disable bluetooth
+bluetooth off &
+
 # start programs at startup
 alacritty &
 
