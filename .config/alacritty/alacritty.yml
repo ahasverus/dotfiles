@@ -1,0 +1,77 @@
+#
+# Alacritty configuration
+#
+
+#import:
+#  - $HOME/.config/alacritty/themes/theme-nord.yml
+
+env:
+  TERM: alacritty
+  XTERM: xterm-256color
+
+window:
+  padding:
+    x: 10
+    y: 10
+  decorations: none
+  opacity: 1.0
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+  bold:
+    family: MesloLGS NF
+    style: Bold
+  italic:
+    family: MesloLGS NF
+    style: Italic
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+  size: 8.0
+
+colors:
+   primary:
+     background: '#2E3440'
+     foreground: '#D8DEE9'
+   normal:
+     black:   '#3B4252'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#88C0D0'
+     white:   '#E5E9F0'
+   bright:
+     black:   '#4C566A'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#8FBCBB'
+     white:   '#ECEFF4'
+
+draw_bold_text_with_bright_colors: false
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Always
+  blink_interval: 750
+  blink_timeout: 60
+
+shell:
+  program: /bin/bash
+  args:
+    - --login
+
+working_directory: None
