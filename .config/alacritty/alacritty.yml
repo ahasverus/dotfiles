@@ -2,9 +2,6 @@
 # Alacritty configuration
 #
 
-#import:
-#  - $HOME/.config/alacritty/themes/theme-nord.yml
-
 env:
   TERM: alacritty
   XTERM: xterm-256color
@@ -70,7 +67,7 @@ cursor:
   blink_timeout: 60
 
 shell:
-  program: /bin/bash
+  program: /usr/bin/zsh
   args:
     - --login
 
