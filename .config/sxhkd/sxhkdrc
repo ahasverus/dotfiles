@@ -123,3 +123,37 @@ super + alt + shift + {Left,Down,Up,Right}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+#
+# Special hotkeys
+#
+
+# Volume controls
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioMute
+	amixer set Master toggle
+
+XF86AudioMicMute
+	amixer set Capture toggle
+
+
+# Brightness controls
+
+XF86MonBrightnessUp
+	source $HOME/.config/bspwm/scripts/brightness-up.sh
+
+XF86MonBrightnessDown
+	source $HOME/.config/bspwm/scripts/brightness-down.sh
+
+# Display button
+
+XF86Display
+	xset dpms force off
+
