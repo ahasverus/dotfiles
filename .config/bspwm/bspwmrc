@@ -14,7 +14,8 @@ pulseaudio --start
 
 ## Workspaces & monitors ----
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor "eDP-1"  -d 1 2 3 4 5 6 7
+bspc monitor "HDMI-1" -d 1 2 3 4 5 6 7
 
 
 ## Customization ----
@@ -48,11 +49,16 @@ bspc config urgent_border_color		"#a8bd91"
 
 ## Applications rules - Workspaces ----
 
-bspc rule -a Alacritty  desktop='^1' follow=on focus=on
-bspc rule -a firefox	desktop='^2' follow=on focus=on
+bspc rule -a Alacritty   desktop='^1' follow=on focus=on
+bspc rule -a thunderbird desktop='^2' follow=on focus=on
+bspc rule -a firefox	 desktop='^3' follow=on focus=on
+bspc rule -a Slack 	 desktop='^4' follow=on focus=on
+bspc rule -a VSCodium    desktop='^5' follow=on focus=on
 
 
 ## Applications rules - Floating ----
 
 #bspc rule -a feh state=floating
+bspc rule -a KeePassXC state=floating
+bspc rule -a Nextcloud state=floating
 
