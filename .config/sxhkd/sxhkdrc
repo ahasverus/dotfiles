@@ -28,7 +28,7 @@ super + {_,shift + }w
 
 # lock sreen
 super + l
-	i3lock -i $HOME/.config/wallpapers/screenlock-arch.png
+	i3lock -i $HOME/.config/wallpapers/screenlock-arch.png -c '#2f343f'
 
 # alternate between the tiled and monocle layout
 super + m
