@@ -3,6 +3,7 @@
     follow = mouse
     width = 350
     offset = 10x45
+    max_notification = 0
     progress_bar = true
     progress_bar_height = 10
     progress_bar_frame_width = 1
