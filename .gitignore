@@ -25,9 +25,13 @@ $HOME/*
 !$HOME/.config/zsh/.p10k.zsh
 !$HOME/.config/zsh/.zprofile
 !$HOME/.config/zsh/.zshrc
-!$HOME/.local/bin/*.sh
-!$HOME/.xinitrc
 
 !$HOME/.gitignore
+!$HOME/.gitconfig
+
+!$HOME/.local/bin/*.sh
+
+!$HOME/.xinitrc
+
 !$HOME/LICENSE
 !$HOME/README.md
