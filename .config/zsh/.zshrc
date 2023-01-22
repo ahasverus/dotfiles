@@ -12,6 +12,10 @@ fi
 # Path to oh-my-zsh installation.
 export ZSH=$HOME/.config/oh-my-zsh
 
+# History
+HISTFILE=$HOME/.cache/zsh/history
+
+# Theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Auto-update behavior
