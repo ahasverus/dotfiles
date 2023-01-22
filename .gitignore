@@ -2,36 +2,6 @@
 ## Dotfiles .gitignore
 ##
 
-## Ignore everything ----
+## Credentials ----
 
-*
-
-
-## Except ----
-
-!.config/alacritty/alacritty.yml
-!.config/bspwm/bspwmrc
-!.config/gtk-3.0/settings.ini
-!.config/neofetch/config.conf
-!.config/picom/picom.conf
-!.config/polybar/config.ini
-!.config/polybar/launch.sh
-!.config/polybar/modules/*
-!.config/polybar/themes/colors.ini
-!.config/R/.Rprofile
-!.config/sxhkd/sxhkdrc
-!.config/user-dirs.dirs
-!.config/wallpapers/*
-!.config/zsh/.p10k.zsh
-!.config/zsh/.zprofile
-!.config/zsh/.zshrc
-
-!.gitignore
-!.gitconfig
-
-!.local/bin/*.sh
-
-!.xinitrc
-
-!LICENSE
-!README.md
+$HOME/.config/R/.Renviron
