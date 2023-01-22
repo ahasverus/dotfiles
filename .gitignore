@@ -4,34 +4,34 @@
 
 ## Ignore everything ----
 
-$HOME/*
+*
 
 
 ## Except ----
 
-!$HOME/.config/alacritty/alacritty.yml
-!$HOME/.config/bspwm/bspwmrc
-!$HOME/.config/gtk-3.0/settings.ini
-!$HOME/.config/neofetch/config.conf
-!$HOME/.config/picom/picom.conf
-!$HOME/.config/polybar/config.ini
-!$HOME/.config/polybar/launch.sh
-!$HOME/.config/polybar/modules/*
-!$HOME/.config/polybar/themes/colors.ini
-!$HOME/.config/R/.Rprofile
-!$HOME/.config/sxhkd/sxhkdrc
-!$HOME/.config/user-dirs.dirs
-!$HOME/.config/wallpapers/*
-!$HOME/.config/zsh/.p10k.zsh
-!$HOME/.config/zsh/.zprofile
-!$HOME/.config/zsh/.zshrc
+!.config/alacritty/alacritty.yml
+!.config/bspwm/bspwmrc
+!.config/gtk-3.0/settings.ini
+!.config/neofetch/config.conf
+!.config/picom/picom.conf
+!.config/polybar/config.ini
+!.config/polybar/launch.sh
+!.config/polybar/modules/*
+!.config/polybar/themes/colors.ini
+!.config/R/.Rprofile
+!.config/sxhkd/sxhkdrc
+!.config/user-dirs.dirs
+!.config/wallpapers/*
+!.config/zsh/.p10k.zsh
+!.config/zsh/.zprofile
+!.config/zsh/.zshrc
 
-!$HOME/.gitignore
-!$HOME/.gitconfig
+!.gitignore
+!.gitconfig
 
-!$HOME/.local/bin/*.sh
+!.local/bin/*.sh
 
-!$HOME/.xinitrc
+!.xinitrc
 
-!$HOME/LICENSE
-!$HOME/README.md
+!LICENSE
+!README.md
