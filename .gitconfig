@@ -8,3 +8,5 @@
 [branch]
 	autosetuprebase = always
 	autosetupmerge  = always
+[credential]
+	helper = cache
