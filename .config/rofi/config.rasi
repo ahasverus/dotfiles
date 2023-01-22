@@ -9,10 +9,10 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #11121D;
-  bg-alt: #444b6a;
+  bg: #3B4252;
+  bg-alt: #81A1C1;
 
-  fg: #FFFFFF;
+  fg: #E5E9F0;
   fg-alt: #787c99;
 
   background-color: @bg;
@@ -25,6 +25,10 @@ configuration {
 
 window {
   width: 30%;
+  margin: 10px;
+  border: 1px;
+  border-radius: 10px;
+  border-color: @fg;
 }
 
 element {
@@ -74,7 +78,6 @@ prompt {
   enabled: true;
   padding: 12 0 0 12;
   text-color: @fg;
-  text-size: 40;
 }
 
 /* vim: ft=sass
