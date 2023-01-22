@@ -47,7 +47,7 @@ rfkill block wifi &
 bluetooth off &
 
 # start programs at startup
-alacritty &
+#alacritty &
 
 # start wm
 exec bspwm
