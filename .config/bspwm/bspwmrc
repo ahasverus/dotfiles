@@ -5,60 +5,68 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom &
 
+
+## Desktop ----
+
 xsetroot -cursor_name left_ptr
 feh --bg-scale $HOME/.config/wallpapers/nord-ghibli.png
-
-source $HOME/.config/polybar/launch.sh
-pulseaudio --start
 
 
 ## Workspaces & monitors ----
 
-bspc monitor "eDP-1"  -d 1 2 3 4 5 6 7
-bspc monitor "HDMI-1" -d 1 2 3 4 5 6 7
+bspc monitor eDP-1  -d 1 2 3 4 5 6 7 8 9
+bspc monitor HDMI-1 -d 1 2 3 4 5 6 7 8 9
 
 
 ## Customization ----
 
-bspc config border_width         	  0
-bspc config window_gap          	 10
+bspc config border_width            0
+bspc config window_gap             10
 
-bspc config top_padding         	 20
-bspc config bottom_padding       	  0
-bspc config left_padding         	  0
-bspc config right_padding        	  0
+bspc config top_padding            20
+bspc config bottom_padding       	0
+bspc config left_padding         	0
+bspc config right_padding        	0
 
+bspc config split_ratio          	0.50
 
-bspc config split_ratio          	  0.50
+bspc config borderless_monocle     true
+bspc config gapless_monocle        true
 
-bspc config borderless_monocle   	  true
-bspc config gapless_monocle      	  true
-
-bspc config click_to_focus       	  true
-bspc config focus_by_distance             true
-bspc config focus_follows_pointer         false
+bspc config click_to_focus         true
+bspc config focus_by_distance      true
+bspc config focus_follows_pointer  false
 
 
 ## Colors theme ----
 
-bspc config normal_border_color	        "#2d333f"
-bspc config active_border_color	        "#4c566a"
-bspc config focused_border_color        "#4c566a"
-bspc config urgent_border_color		"#a8bd91"
+bspc config normal_border_color	   "#2d333f"
+bspc config active_border_color	   "#4c566a"
+bspc config focused_border_color   "#4c566a"
+bspc config urgent_border_color	   "#a8bd91"
 
 
-## Applications rules - Workspaces ----
+## Applications rules - Assign workspaces ----
 
 bspc rule -a Alacritty   desktop='^1' follow=on focus=on
 bspc rule -a thunderbird desktop='^2' follow=on focus=on
-bspc rule -a firefox	 desktop='^3' follow=on focus=on
-bspc rule -a Slack 	 desktop='^4' follow=on focus=on
-bspc rule -a VSCodium    desktop='^5' follow=on focus=on
+bspc rule -a Slack 	     desktop='^3' follow=on focus=on
+bspc rule -a firefox	 desktop='^4' follow=on focus=on
+bspc rule -a rstudio     desktop='^5' follow=on focus=on
+bspc rule -a VSCodium    desktop='^6' follow=on focus=on
 
 
 ## Applications rules - Floating ----
 
-#bspc rule -a feh state=floating
-bspc rule -a KeePassXC state=floating
-bspc rule -a Nextcloud state=floating
+bspc rule -a Nextcloud   state=floating
+bspc rule -a Pavucontrol state=floating
 
+
+## Launch Polybar ----
+
+source $HOME/.config/polybar/launch.sh
+
+
+## Bluetooth fix ----
+
+pulseaudio -k && sleep 1 && pulseaudio --start
