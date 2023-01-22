@@ -63,6 +63,7 @@ alias battery='echo "battery = "$(cat /sys/class/power_supply/BAT0/capacity)"%"'
 alias status='echo -e $(wifi)"\n"$(bluetooth)"\n"$(battery)'
 alias meteo='curl -s http://wttr.in/montpellier'
 
+
 ## HOTKEYS
 
 bindkey '[C' forward-word
@@ -71,6 +72,8 @@ bindkey '[D' backward-word
 ## Others
 
 export LESSHISTFILE=-
+
+source $HOME/.local/bin/bluetooth-utils.sh
 
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
