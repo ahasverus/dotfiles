@@ -60,5 +60,5 @@ options(usethis.full_name   = "Nicolas Casajus",
             role    = c("aut", "cre", "cph"),
             comment = c(ORCID = "0000-0002-5537-5294")),
           Version = "0.0.0.9000"),
-        usethis.protocol    = "ssh"
+        usethis.protocol    = "ssh",
         usethis.overwrite   = TRUE)
