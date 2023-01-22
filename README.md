@@ -1,4 +1,4 @@
 # dotfiles
 
-__ADD DESCRIPTION__
+_ADD DESCRIPTION_
 
