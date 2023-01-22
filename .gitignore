@@ -1,0 +1,33 @@
+##
+## Dotfiles .gitignore
+##
+
+## Ignore everything ----
+
+$HOME/*
+
+
+## Except ----
+
+!$HOME/.config/alacritty/alacritty.yml
+!$HOME/.config/bspwm/bspwmrc
+!$HOME/.config/gtk-3.0/settings.ini
+!$HOME/.config/neofetch/config.conf
+!$HOME/.config/picom/picom.conf
+!$HOME/.config/polybar/config.ini
+!$HOME/.config/polybar/launch.sh
+!$HOME/.config/polybar/modules/*
+!$HOME/.config/polybar/themes/colors.ini
+!$HOME/.config/R/.Rprofile
+!$HOME/.config/sxhkd/sxhkdrc
+!$HOME/.config/user-dirs.dirs
+!$HOME/.config/wallpapers/*
+!$HOME/.config/zsh/.p10k.zsh
+!$HOME/.config/zsh/.zprofile
+!$HOME/.config/zsh/.zshrc
+!$HOME/.local/bin/*.sh
+!$HOME/.xinitrc
+
+!$HOME/.gitignore
+!$HOME/LICENSE
+!$HOME/README.md
