@@ -19,7 +19,7 @@
     frame_color = "#787c99"
     separator_color = frame
     sort = yes
-    idle_threshold = 120
+    idle_threshold = 0
     font = MesloLGS NF Medium 11
     line_height = 0
     markup = full
@@ -69,5 +69,5 @@
     background  = "#b34f4c"
     foreground  = "#E5E9F0"
     frame_color = "#E5E9F0"
-    timeout = -1
+    #timeout = -1
     format = "<b>%s</b>\n%b"
