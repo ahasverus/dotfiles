@@ -33,12 +33,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # define keyboard layout
-setxkbmap -layout "ca" -variant "fr"
+setxkbmap -layout "fr"
 
 # touchpad configuration
-xinput set-prop 11 331 50
-xinput set-prop 11 313 1
-xinput set-prop 11 334 1
+xinput set-prop 12 332 50 # Scrolling Pixel Distance
+xinput set-prop 12 314 1  # Natural Scrolling Enabled
+xinput set-prop 12 335 1  # Tapping Enabled
 
 # disable wlan
 rfkill block wifi &
