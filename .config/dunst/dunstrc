@@ -36,7 +36,7 @@
     icon_position = left
     min_icon_size = 0
     max_icon_size = 64
-    icon_path = /home/archie/.config/icons
+    icon_path = /home/nicolas/.config/icons
     sticky_history = yes
     history_length = 20
     always_run_script = true
