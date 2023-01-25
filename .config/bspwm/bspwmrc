@@ -48,25 +48,19 @@ bspc config urgent_border_color	   "#a8bd91"
 
 ## Applications rules - Assign workspaces ----
 
-bspc rule -a Alacritty   desktop='^1' follow=on focus=on
-bspc rule -a thunderbird desktop='^2' follow=on focus=on
-bspc rule -a Slack 	     desktop='^3' follow=on focus=on
-bspc rule -a firefox	 desktop='^4' follow=on focus=on
-bspc rule -a rstudio     desktop='^5' follow=on focus=on
-bspc rule -a VSCodium    desktop='^6' follow=on focus=on
+bspc rule -a Alacritty   desktop='^1' follow=on
+bspc rule -a thunderbird desktop='^2' follow=on
+bspc rule -a Slack 	     desktop='^3' follow=on
+bspc rule -a firefox	 desktop='^4' follow=on
+bspc rule -a rstudio     desktop='^5' follow=on
+bspc rule -a VSCodium    desktop='^6' follow=on
 
 
 ## Applications rules - Floating ----
 
 bspc rule -a Nextcloud   state=floating
-bspc rule -a Pavucontrol state=floating
 
 
 ## Launch Polybar ----
 
 source $HOME/.config/polybar/launch.sh
-
-
-## Bluetooth fix ----
-
-pulseaudio -k && sleep 1 && pulseaudio --start
