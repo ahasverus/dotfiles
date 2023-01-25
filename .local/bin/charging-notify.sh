@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export XAUTHORITY=/home/eric/.Xauthority
+export XAUTHORITY=/home/nicolas/.Xauthority
 export DISPLAY=:0
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 
