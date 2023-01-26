@@ -36,9 +36,9 @@ fi
 setxkbmap -layout "ca" -variant "fr"
 
 # touchpad configuration
-xinput set-prop 11 331 50
-xinput set-prop 11 313 1
-xinput set-prop 11 334 1
+xinput set-prop 11 331 15 # Scrolling Pixel Distance
+xinput set-prop 11 313  1 # Natural Scrolling Enabled
+xinput set-prop 11 334  1 # Tapping Enabled
 
 # disable wlan
 rfkill block wifi &
@@ -47,7 +47,7 @@ rfkill block wifi &
 bluetooth off &
 
 # start programs at startup
-#alacritty &
+# ...
 
 # start wm
 exec bspwm
