@@ -9,7 +9,7 @@ pgrep -x picom > /dev/null || picom &
 ## Desktop ----
 
 xsetroot -cursor_name left_ptr
-feh --bg-scale $HOME/.config/wallpapers/nord-ghibli.png
+feh --bg-fill $HOME/.config/wallpapers/nord-ghibli.png
 
 
 ## Workspaces & monitors ----
