@@ -66,6 +66,8 @@ alias dp='dot push'
 alias battery='echo "battery = "$(cat /sys/class/power_supply/BAT0/capacity)"%"'
 alias status='echo -e $(wifi)"\n"$(bluetooth)"\n"$(battery)'
 alias meteo='curl -s http://wttr.in/montpellier'
+alias notes='codium $HOME/nextcloud/Notes/notes.code-workspace'
+alias gists='codium $HOME/github/gists/gists.code-workspace'
 
 
 ## HOTKEYS
