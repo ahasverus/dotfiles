@@ -5,8 +5,8 @@ export XAUTHORITY=/home/archie/.Xauthority
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 
 # Battery percentage at which to notify
-WARNING_LEVEL=25
-BATTERY_FULL_LEVEL=95
+WARNING_LEVEL=30
+BATTERY_FULL_LEVEL=90
 BATTERY_DISCHARGING=`acpi -b | grep "Battery 0" | grep -c "Discharging"`
 BATTERY_LEVEL=`acpi -b | grep "Battery 0" | grep -P -o '[0-9]+(?=%)'`
 
