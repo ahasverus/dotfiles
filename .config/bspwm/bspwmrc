@@ -2,8 +2,9 @@
 
 ## Autostart ----
 
-pgrep -x sxhkd > /dev/null || sxhkd &
-pgrep -x picom > /dev/null || picom &
+pgrep -x sxhkd       > /dev/null || sxhkd &
+pgrep -x picom       > /dev/null || picom &
+pgrep -x mpris-proxy > /dev/null || mpris-proxy &
 
 
 ## Desktop ----
