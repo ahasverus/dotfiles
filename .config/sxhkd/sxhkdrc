@@ -117,16 +117,16 @@ super + {Left,Down,Up,Right}
 # Volume controls
 
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+	source $HOME/.local/bin/volume-up.sh
 
 XF86AudioLowerVolume
-	amixer set Master 5%-
+	source $HOME/.local/bin/volume-down.sh
 
 XF86AudioMute
-	amixer set Master toggle
+	source $HOME/.local/bin/volume-mute.sh
 
 XF86AudioMicMute
-	amixer set Capture toggle
+	source $HOME/.local/bin/microphone-mute.sh
 
 
 # Brightness controls
