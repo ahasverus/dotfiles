@@ -54,10 +54,10 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background  = "#2e3440"
+    background  = "#a3be8c"
     foreground  = "#E5E9F0"
     frame_color = "#E5E9F0"
-    timeout = 10
+    timeout     = 0
 
 [urgency_normal]
     background  = "#2e3440"

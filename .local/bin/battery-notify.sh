@@ -23,7 +23,7 @@ fi
 
 # If the battery is charging and is full (and has not shown notification yet)
 if [ $BATTERY_LEVEL -gt $BATTERY_FULL_LEVEL ] && [ $BATTERY_DISCHARGING -eq 0 ] && [ ! -f $FULL_FILE ]; then
-    /usr/bin/dunstify "BATTERY CHARGED" "Battery is fully charged." -u normal -i battery-3 -r 9991
+    /usr/bin/dunstify "BATTERY CHARGED" "Battery is fully charged." -u low -i battery-3 -r 9991
     touch $FULL_FILE
 # If the battery is low and is not charging (and has not shown notification yet)
 elif [ $BATTERY_LEVEL -le $WARNING_LEVEL ] && [ $BATTERY_DISCHARGING -eq 1 ] && [ ! -f $EMPTY_FILE ]; then
