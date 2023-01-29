@@ -114,6 +114,21 @@ super + {Left,Down,Up,Right}
 # Special hotkeys
 #
 
+# Applications
+
+super + shift + n
+	/usr/bin/codium $HOME/nextcloud/Notes/notes.code-workspace
+
+super + shift + f
+	/usr/bin/firefox
+
+super + shift + m
+	/usr/bin/thunderbird
+
+super + shift + r
+	/usr/lib/rstudio/rstudio
+
+
 # Volume controls
 
 XF86AudioRaiseVolume
