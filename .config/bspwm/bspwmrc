@@ -10,7 +10,7 @@ pgrep -x mpris-proxy > /dev/null || mpris-proxy &
 ## Desktop ----
 
 xsetroot -cursor_name left_ptr
-feh --bg-fill $HOME/.config/wallpapers/nord-ghibli.png
+feh --bg-fill $HOME/.config/wallpapers/nord-arch.png
 
 
 ## Workspaces & monitors ----
