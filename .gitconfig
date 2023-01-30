@@ -10,3 +10,5 @@
 	autosetupmerge  = always
 [credential]
 	helper = cache
+[core]
+	editor = nano -w
