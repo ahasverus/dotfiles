@@ -10,14 +10,12 @@ BATTERY_LEVEL=`acpi -b | grep "Battery 0" | grep -P -o '[0-9]+(?=%)'`
 
 if [ ${BATTERY_LEVEL} -le 30 ]; then
     icon="0"
-elif [ ${BATTERY_LEVEL} -gt 30 ] && [ ${BATTERY_LEVEL} -le 50 ]; then
+elif [ ${BATTERY_LEVEL} -gt 30 ] && [ ${BATTERY_LEVEL} -le 60 ]; then
     icon="1"
-elif [ ${BATTERY_LEVEL} -gt 50 ] && [ ${BATTERY_LEVEL} -le 70 ]; then
+elif [ ${BATTERY_LEVEL} -gt 60 ] && [ ${BATTERY_LEVEL} -le 90 ]; then
     icon="2"
-elif [ ${BATTERY_LEVEL} -gt 70 ] && [ ${BATTERY_LEVEL} -le 90 ]; then
-    icon="3"
 else
-    icon="charging"
+    icon="3"
 fi
 
 # Send notifications
