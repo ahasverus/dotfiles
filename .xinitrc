@@ -46,16 +46,8 @@ rfkill block wifi &
 # disable bluetooth
 bluetooth off &
 
-sleep 1
-
-# mute speaker
-pactl set-sink-mute $(pactl get-default-sink) on &
-
 # mute microphone
 pactl set-source-mute $(pactl get-default-source) on &
-
-# start programs at startup
-# ...
 
 # start wm
 exec bspwm

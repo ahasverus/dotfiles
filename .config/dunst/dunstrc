@@ -63,11 +63,10 @@
     background  = "#2e3440"
     foreground  = "#E5E9F0"
     frame_color = "#E5E9F0"
-    timeout = 10
+    timeout     = 10
 
 [urgency_critical]
     background  = "#b34f4c"
     foreground  = "#E5E9F0"
     frame_color = "#E5E9F0"
-    #timeout = -1
-    format = "<b>%s</b>\n%b"
+    format      = "<b>%s</b>\n%b"

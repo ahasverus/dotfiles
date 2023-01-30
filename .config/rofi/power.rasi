@@ -1,0 +1,31 @@
+/* Style for power menu */
+
+configuration {
+  font: "MesloLGS NF Medium 50";
+}
+
+window {
+  width: 35%;
+}
+
+inputbar {
+  enabled: false;
+}
+
+listview {
+	lines: 1;
+  columns: 5;
+  padding: 5 20;
+  spacing: 90;
+}
+
+element {
+  orientation: horizontal;
+  children: [element-text];
+}
+
+element-text {
+  size: 200;
+  horizontal-align: 0.5;
+}
+
