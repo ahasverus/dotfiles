@@ -56,18 +56,29 @@ source $ZSH/oh-my-zsh.sh
 alias ..='cd ..'
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -al'
+
 alias code='codium'
 alias zrc='codium $HOME/.config/zsh/.zshrc'
+
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ds='dot status'
 alias da='dot add'
 alias dc='dot commit -m'
-alias dp='dot push -u origin p14s'
+alias dp='dot push'
+
 alias battery='echo "battery = "$(cat /sys/class/power_supply/BAT0/capacity)"%"'
 alias status='echo -e $(wifi)"\n"$(bluetooth)"\n"$(battery)'
+
 alias meteo='curl -s http://wttr.in/montpellier'
+
 alias notes='codium $HOME/nextcloud/Notes/notes.code-workspace'
 alias gists='codium $HOME/github/gists/gists.code-workspace'
+
+alias reboot='sudo reboot'
+alias shutdown='sudo shutdown now'
+alias suspend='systemctl suspend-then-hibernate '
+alias logout='bspc quit'
+alias lock='i3lock -i $HOME/.config/wallpapers/screenlock-arch.png -c "#2f343f"'
 
 
 ## HOTKEYS

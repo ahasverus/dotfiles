@@ -46,9 +46,8 @@ rfkill block wifi &
 # disable bluetooth
 bluetooth off &
 
-# start programs at startup
-#alacritty &
+# mute microphone
+pactl set-source-mute $(pactl get-default-source) on &
 
 # start wm
 exec bspwm
-
