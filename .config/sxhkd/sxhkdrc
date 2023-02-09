@@ -132,6 +132,14 @@ super + shift + m
 super + shift + r
 	/usr/lib/rstudio/rstudio
 
+super + shift + s
+	/usr/bin/slack
+
+super + shift + k
+	/usr/bin/keepassxc
+
+super + shift + z
+	/usr/bin/zotero 
 
 # Volume controls
 
@@ -160,3 +168,14 @@ XF86MonBrightnessDown
 
 XF86Display
 	xset dpms force off
+
+# Screenshots
+
+@Print
+	source $HOME/.local/bin/screenshot.sh
+
+shift + @Print
+	source $HOME/.local/bin/screenshot.sh select
+
+control + @Print
+	source $HOME/.local/bin/screenshot.sh window
