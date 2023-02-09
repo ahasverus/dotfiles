@@ -80,6 +80,7 @@ alias suspend='systemctl suspend-then-hibernate '
 alias logout='bspc quit'
 alias lock='i3lock -i $HOME/.config/wallpapers/screenlock-arch.png -c "#2f343f"'
 
+alias vpn='sudo openfortivpn'
 
 ## HOTKEYS
 
@@ -89,6 +90,9 @@ bindkey '[D' backward-word
 ## Others
 
 export LESSHISTFILE=-
+export BROWSER=firefox
+
+#export WINIT_X11_SCALE_FACTOR=2 alacritty
 
 source $HOME/.local/bin/bluetooth-utils.sh
 
