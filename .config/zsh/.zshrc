@@ -66,6 +66,11 @@ alias da='dot add'
 alias dc='dot commit -m'
 alias dp='dot push'
 
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
 alias battery='echo "battery = "$(cat /sys/class/power_supply/BAT0/capacity)"%"'
 alias status='echo -e $(wifi)"\n"$(bluetooth)"\n"$(battery)'
 
@@ -91,8 +96,6 @@ bindkey '[D' backward-word
 
 export LESSHISTFILE=-
 export BROWSER=firefox
-
-#export WINIT_X11_SCALE_FACTOR=2 alacritty
 
 source $HOME/.local/bin/bluetooth-utils.sh
 
