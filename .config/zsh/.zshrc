@@ -66,6 +66,11 @@ alias da='dot add'
 alias dc='dot commit -m'
 alias dp='dot push'
 
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
 alias battery='echo "battery = "$(cat /sys/class/power_supply/BAT0/capacity)"%"'
 alias status='echo -e $(wifi)"\n"$(bluetooth)"\n"$(battery)'
 
@@ -80,6 +85,8 @@ alias suspend='systemctl suspend-then-hibernate '
 alias logout='bspc quit'
 alias lock='i3lock -i $HOME/.config/wallpapers/screenlock-arch.png -c "#2f343f"'
 
+alias vpn='sudo openfortivpn'
+
 
 ## HOTKEYS
 
@@ -89,6 +96,7 @@ bindkey '[D' backward-word
 ## Others
 
 export LESSHISTFILE=-
+export BROWSER=firefox
 
 source $HOME/.local/bin/bluetooth-utils.sh
 
