@@ -168,8 +168,20 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	source $HOME/.local/bin/brightness-down.sh
 
+
 # Display button
 
 XF86Display
 	xset dpms force off
 
+
+# Screenshots
+
+@Print
+	source $HOME/.local/bin/screenshot.sh
+
+shift + @Print
+	source $HOME/.local/bin/screenshot.sh select
+
+control + @Print
+	source $HOME/.local/bin/screenshot.sh window
