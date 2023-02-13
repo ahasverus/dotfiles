@@ -123,7 +123,7 @@ super + {Left,Down,Up,Right}
 super + shift + n
 	/usr/bin/codium $HOME/nextcloud/Notes/notes.code-workspace
 
-super + shift + f
+super + shift + b
 	/usr/bin/firefox
 
 super + shift + m
@@ -140,6 +140,10 @@ super + shift + k
 
 super + shift + z
 	/usr/bin/zotero 
+
+super + shift + f
+	/usr/bin/thunar
+
 
 # Volume controls
 
