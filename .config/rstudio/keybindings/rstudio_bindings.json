@@ -28,5 +28,6 @@
     "layoutZoomLeftColumn": "",
     "zoomActualSize": "",
     "layoutEndZoom": "",
-    "insertAssignmentOperator": "Ctrl+Shift++"
+    "insertAssignmentOperator": "Ctrl+Shift++",
+    "layoutZoomCurrentPane": ""
 }
