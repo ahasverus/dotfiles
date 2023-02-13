@@ -81,7 +81,7 @@ alias gists='codium $HOME/github/gists/gists.code-workspace'
 
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
-alias suspend='systemctl suspend-then-hibernate '
+alias suspend='systemctl suspend-then-hibernate'
 alias logout='bspc quit'
 alias lock='i3lock -i $HOME/.config/wallpapers/screenlock-arch.png -c "#2f343f"'
 
