@@ -33,7 +33,7 @@ zstyle ':omz:update' frequency 1
 # HIST_STAMPS="yyyy/mm/dd"
 
 # Plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search z)
 
 source $ZSH/oh-my-zsh.sh
 
