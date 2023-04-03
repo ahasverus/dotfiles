@@ -144,6 +144,9 @@ super + shift + z
 super + shift + f
 	/usr/bin/thunar
 
+super + shift + p
+	/opt/WeekToDo/weektodo
+
 
 # Volume controls
 

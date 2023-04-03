@@ -55,6 +55,7 @@ bspc rule -a Slack       desktop='^3' follow=on
 bspc rule -a firefox	 desktop='^4' follow=on
 bspc rule -a rstudio     desktop='^5' follow=on
 bspc rule -a VSCodium    desktop='^6' follow=on
+bspc rule -a WeekToDo    desktop='^6' follow=on
 
 
 ## Applications rules - Floating ----

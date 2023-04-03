@@ -33,7 +33,7 @@ zstyle ':omz:update' frequency 1
 # HIST_STAMPS="yyyy/mm/dd"
 
 # Plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,6 +70,7 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
+alias gl='git log --oneline --graph'
 
 alias battery='echo "battery = "$(cat /sys/class/power_supply/BAT0/capacity)"%"'
 alias status='echo -e $(wifi)"\n"$(bluetooth)"\n"$(battery)'

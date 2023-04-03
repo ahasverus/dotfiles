@@ -37,8 +37,8 @@ setxkbmap -layout "fr"
 
 # touchpad configuration
 xinput set-prop 12 335 15 # Scrolling Pixel Distance
-xinput set-prop 12 317  1 # Natural Scrolling Enabled
-xinput set-prop 12 338  1 # Tapping Enabled
+xinput set-prop 12 319  1 # Natural Scrolling Enabled
+xinput set-prop 12 340  1 # Tapping Enabled
 
 # disable wlan
 rfkill block wifi &
