@@ -22,18 +22,18 @@ volume_print() {
    else
       if (($volume_level > 0  && $volume_level <= 33))
       then
-         icon="%{T7}󰕿%{T-}"
+         icon="%{T5}󰕿%{T-}"
       elif (($volume_level > 33 && $volume_level <= 66))
       then
-         icon="%{T7}󰖀%{T-}"
+         icon="%{T6}󰖀%{T-}"
       else
-         icon="%{T7}󰕾%{T-}"
+         icon="%{T2}󰕾%{T-}"
       fi
    fi
 
    if [[ $volume_status -eq 1 || $volume_level == 0 ]]
    then
-      echo "%{F#555555}%{T7}󰖁%{T-}%{T4} Muted%{T-}%{F-}"
+      echo "%{F#555555}%{T2}󰖁%{T-}%{T4} Muted%{T-}%{F-}"
    else
       echo "%{F#d8dee9}$icon%{T4} $volume_level%%{T-}%{F-}"
    fi

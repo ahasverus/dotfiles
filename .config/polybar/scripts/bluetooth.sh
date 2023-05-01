@@ -17,7 +17,7 @@ bluetooth_print() {
 
         if [[ $(bluetooth | grep -c "on") -eq 1 ]]; then
 
-            msg="%{F$color_enable}󰂯"
+            msg="%{F$color_enable}%{T3}󰂯%{T-}"
 
             devices_connected=$(bluetoothctl devices Connected | cut -d ' ' -f 3-)
             
@@ -54,7 +54,7 @@ bluetooth_print() {
 
         else
 
-            echo "%{F$color_disable}󰂲%{T4} Down%{T-}%{F-}"
+            echo "%{F$color_disable}%{T9}󰂲%{T-}%{T4} Down%{T-}%{F-}"
         fi
 
     done
