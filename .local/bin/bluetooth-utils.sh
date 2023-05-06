@@ -14,6 +14,7 @@ bt () {
         "bose") device='60:AB:D2:27:D1:76';;
         "quiet")  device='60:AB:D2:B2:B6:D3';;
         "mxkeys") device='D4:F5:72:09:48:51';;
+	"marshall") device='04:21:44:8A:9A:85';;
     esac
 
     bluetoothctl $action $device
