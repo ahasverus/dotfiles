@@ -22,12 +22,12 @@ volume_print() {
    else
       if (($volume_level > 0  && $volume_level <= 33))
       then
-         icon="%{T7}󰕿%{T-}"
+         icon="%{T5}󰕿%{T-}"
       elif (($volume_level > 33 && $volume_level <= 66))
       then
-         icon="%{T7}󰖀%{T-}"
+         icon="%{T6}󰖀%{T-}"
       else
-         icon="%{T7}󰕾%{T-}"
+         icon="%{T2}󰕾%{T-}"
       fi
    fi
 
