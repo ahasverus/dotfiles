@@ -18,7 +18,7 @@ volume_print() {
 
    if [[ $headset -eq 1 ]]
    then
-      icon="%{T8}󰋋%{T-}"
+      icon="%{T9}󰋋%{T-}"
    else
       if (($volume_level > 0  && $volume_level <= 33))
       then
