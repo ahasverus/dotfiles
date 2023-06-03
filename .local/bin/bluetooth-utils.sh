@@ -15,6 +15,7 @@ bt () {
         "quiet")  device='60:AB:D2:B2:B6:D3';;
         "mxkeys") device='D4:F5:72:09:48:51';;
 	"marshall") device='04:21:44:8A:9A:85';;
+	"major") device='1C:6E:4C:7F:58:83';;
     esac
 
     bluetoothctl $action $device
