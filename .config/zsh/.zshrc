@@ -57,6 +57,8 @@ alias ..='cd ..'
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -al'
 
+alias vim='nvim'
+
 alias code='codium'
 alias zrc='codium $HOME/.config/zsh/.zshrc'
 
@@ -100,6 +102,8 @@ export BROWSER=firefox
 
 source $HOME/.local/bin/bluetooth-utils.sh
 
-
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# Conda
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
