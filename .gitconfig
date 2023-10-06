@@ -3,11 +3,11 @@
 	email = nicolas.casajus@gmail.com
 [init]
 	defaultBranch = main
-[pull]
-	rebase = false
-[branch]
-	autosetuprebase = always
-	autosetupmerge  = always
+#[pull]
+#	rebase = true
+#[branch]
+#	autosetuprebase = always
+#	autosetupmerge  = always
 [credential]
 	helper = cache
 [core]

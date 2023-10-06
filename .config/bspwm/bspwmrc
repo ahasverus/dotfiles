@@ -52,10 +52,11 @@ bspc config urgent_border_color	    "#a8bd91"
 bspc rule -a Alacritty   desktop='^1' follow=on
 bspc rule -a thunderbird desktop='^2' follow=on
 bspc rule -a Slack       desktop='^3' follow=on
-bspc rule -a firefox	 desktop='^4' follow=on
+bspc rule -a firefox	   desktop='^4' follow=on
 bspc rule -a rstudio     desktop='^5' follow=on
 bspc rule -a VSCodium    desktop='^6' follow=on
-bspc rule -a WeekToDo    desktop='^6' follow=on
+bspc rule -a WeekToDo    desktop='^7' follow=on
+bspc rule -a Lollypop    desktop='^8' follow=on
 
 
 ## Applications rules - Floating ----

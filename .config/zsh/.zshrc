@@ -62,6 +62,8 @@ alias vim='nvim'
 alias code='codium'
 alias zrc='codium $HOME/.config/zsh/.zshrc'
 
+alias git='LANG=en_GB git'
+
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ds='dot status'
 alias da='dot add'
