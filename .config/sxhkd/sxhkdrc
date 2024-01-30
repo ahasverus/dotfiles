@@ -127,7 +127,7 @@ super + shift + b
 	/usr/bin/firefox
 
 super + shift + m
-	/usr/bin/thunderbird
+	/usr/bin/librewolf
 
 super + shift + r
 	/usr/lib/rstudio/rstudio
@@ -143,9 +143,6 @@ super + shift + z
 
 super + shift + f
 	/usr/bin/thunar
-
-super + shift + p
-	/usr/bin/weektodo
 
 super + shift + l
 	/usr/bin/lollypop
